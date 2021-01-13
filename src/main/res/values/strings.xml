@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Reco</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="search">search</string>
+    <string name="Add">Add</string>
+</resources>

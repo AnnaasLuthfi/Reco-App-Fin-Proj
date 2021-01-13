@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/whitedikit"
+        android:id="@+id/card"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        android:background="@color/whitedikit"
+        android:id="@+id/rl_item"
+        >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img_view"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_toRightOf="@id/img_view"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="nama"
+            android:id="@+id/tv_title"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_chapter"
+            android:text="chapter"
+            android:layout_below="@id/tv_title"
+            android:layout_toRightOf="@id/img_view"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_likes"
+            android:text="Likes : 100"
+            android:layout_below="@id/tv_chapter"
+            android:layout_toRightOf="@id/img_view"
+
+            >
+        </TextView>
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

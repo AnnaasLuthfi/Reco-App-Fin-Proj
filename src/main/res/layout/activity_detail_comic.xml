@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailComic">
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Reco"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardProfilePicture"
+            app:layout_constraintTop_toTopOf="@+id/cardProfilePicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navbar"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="57dp"
+        android:layout_toEndOf="@+id/imageComicDetail"
+        android:layout_toRightOf="@+id/imageComicDetail"
+        android:text="Title"
+        android:textColor="#2E17EA"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/categoryComic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleA"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@+id/imageComicDetail"
+        android:layout_toRightOf="@+id/imageComicDetail"
+        android:text="category"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageComicDetail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/navbar"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="59dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+</RelativeLayout>
