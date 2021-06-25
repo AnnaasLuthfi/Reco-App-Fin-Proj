@@ -1,3 +1,3 @@
 # Reco(Read Comic)
 
-Concept apps 
+Aplikasi Untuk Membaca Komik (UAS)
